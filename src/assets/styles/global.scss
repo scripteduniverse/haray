@@ -1,0 +1,44 @@
+@import "mixins";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-weight: unset;
+}
+
+input {
+  font-family: "Futura PT", sans-serif;
+  color: inherit;
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  font-size: 16px;
+  &:hover {
+    color: inherit;
+  }
+}
+
+ul,
+li {
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 1.07632px;
+  font-family: "Futura PT", sans-serif;
+  font-weight: 300;
+}

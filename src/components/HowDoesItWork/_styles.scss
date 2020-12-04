@@ -1,0 +1,419 @@
+@import "src/assets/styles/mixins";
+
+.HowDoesItWork {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 200px;
+  padding-top: 220px;
+  text-align: center;
+  //include mobile i sdelat procentami chtob na mobilkax bilo
+
+  &__main-text {
+    font-family: Marcellus;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6rem;
+    line-height: 98.32px;
+    @media only screen and(max-width:1570px) {
+      font-size: 4rem;
+      // padding-top: 50px;
+      line-height: 68.32px;
+    }
+
+    @include middle {
+      font-size: 4rem;
+    }
+    @include mobile {
+      font-size: 2rem;
+      line-height: 2.2rem;
+
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+  &__additional-text {
+    font-style: normal;
+    font-weight: 250;
+    font-size: 2rem;
+    line-height: 139.9%;
+    font-family: "myfont";
+    padding-top: 20px;
+    @media only screen and(max-width:1570px) {
+      font-size: 1.25rem;
+    }
+    @include middle {
+      font-size: 1.25rem;
+    }
+    @include mobile {
+      font-size: 1rem;
+      justify-content: center;
+      text-align: center;
+      // display: inline-block;
+      // margin: 0 auto;
+    }
+
+    /* or 36px */
+
+    color: #000000;
+  }
+  &__container {
+    width: 100%;
+    height: 100%;
+    background-color: #f6d7b9;
+    // height: 100%;
+  }
+  &__inner-container {
+    width: 456px;
+    // position: relative;
+    margin: 0 auto;
+    background: white;
+    box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
+      inset 30px 2px 30px rgba(255, 255, 255, 0.8);
+    border-radius: 66px 66px 0 0;
+    @include mobile {
+      width: 266px;
+      border-radius: 37.2959px 37.2959px 0 0;
+    }
+  }
+}
+
+.cellphone {
+  position: relative;
+  background-color: #f1f3f6;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 470px;
+  height: 494px;
+  background: #f1f3f6;
+  box-shadow: 80px 60px 60px rgba(0, 0, 0, 0.14),
+    inset -30px -2px 30px rgba(64, 82, 128, 0.1),
+    inset 30px 2px 30px rgba(255, 255, 255, 0.4);
+  border-radius: 68px 68px 0 0;
+  @include mobile {
+    width: 300px;
+    height: 277px;
+    border-radius: 38.426px 38.426px 0 0;
+  }
+
+  &__top-bar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 455px;
+    height: 93px;
+    margin: 0 auto;
+    border-radius: 66px 66px 0 0;
+    // opacity: 0.12;
+
+    // background: #f1f3f6;
+    // box-shadow: 80px 60px 60px rgba(0, 0, 0, 0.14),
+    //   inset -30px -2px 30px rgba(64, 82, 128, 0.1),
+    //   inset 30px 2px 30px rgba(255, 255, 255, 0.4);
+    // border-radius: 68px 68px 0 0;
+
+    border-bottom: 1px solid #d7d8da;
+    @include mobile {
+      width: 285px;
+      height: 52.95px;
+    }
+  }
+  &__svg-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 15px;
+    // position: absolute;
+    width: 112.27px;
+    height: 36px;
+    left: 8.82px;
+    // top: 16px;
+    background: #e4ac55;
+    border-radius: 61px;
+    // z-index: 2;
+    margin-top: 20px;
+    margin-left: 9px;
+    @include mobile {
+      width: 50.44px;
+      height: 15.34px;
+      margin-left: 0px;
+      left: 0px;
+      top: 0px;
+      border-radius: 34.4704px;
+      margin-top: 15px;
+  
+    }
+  }
+
+  &__svg {
+    width: 17.34px;
+    height: 17.34px;
+
+    @include mobile {
+      width: 3.8px;
+      height: 3.8px;
+      margin-top:-13px;
+      margin-left:-5px;
+    }
+  }
+
+  &__number {
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 90%;
+    margin-top: -3px;
+    /* or 22px */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    // margin: 6.93093px 0px;
+    color: #ffffff;
+    @include mobile {
+      font-size: 14.13px;
+    }
+  }
+
+  &__phrase {
+    position: absolute;
+    width: 123px;
+    height: 16px;
+    left: 176.56px;
+    top: 36px;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 16px */
+    text-align: right;
+    color: #4058a1;
+    @include mobile {
+      font-size: 9.04px;
+      left: 35px;
+      top: 25px;
+    }
+  }
+
+  &__chingiz,
+  &__chingiz:before,
+  &__chingiz:after {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    background: #e4ac55;
+    @include mobile{
+      width:15.9px;
+      height:15.9px;
+    }
+  }
+  &__chingiz:before,
+  &__chingiz:after {
+    content: "";
+    position: absolute;
+  }
+  &__chingiz:before {
+    left: 5px;
+    background: #f7d7b9;
+  }
+
+  &__chingiz:after {
+    left: 10px;
+    background: #65faff;
+  }
+  &__test {
+    margin-left: 247px;
+    margin-top: 33px;
+    @include mobile {
+      margin-left: 157px;
+      margin-top: 22px;
+    }
+  }
+
+  // &__test {
+  //   margin-top: 28px;
+  //   margin-left: 20px;
+  // }
+  &__youtube {
+    width: 100%;
+    height: 252.18px;
+    // margin: 0 auto;
+    border-radius: 8.97288px;
+    @include mobile {
+      height: 148.49px;
+    }
+  }
+
+  &__middle-bar {
+    width: 95%;
+    height: 68px;
+    position: relative;
+    // top: 10px;
+    margin: 20px auto;
+    @include mobile {
+      width: 100%;
+      height: 38px;
+      margin: 11px auto;
+    }
+  }
+  &__video-bar {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    @include mobile{
+      width:100%;
+    }
+  }
+
+  &__middle-bar-section {
+    width: 100%;
+    // background-color: yellow;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  &__middle-bar-section-2nd-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+    @include mobile {
+      left: 10px;
+    }
+  }
+  &__keyword-number {
+    position: relative;
+    padding-top: 2px;
+    border: 1px solid #56c54c;
+    color: #56c54c;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    // left: 200px;
+    background: white;
+    // box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
+    //   inset 30px 2px 30px rgba(255, 255, 255, 0.8);
+    // border-radius: 66px;
+
+    border: 1px solid #baff8f;
+    box-sizing: border-box;
+    border-radius: 34px;
+  }
+  &__left-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    left: 208px;
+
+    @include mobile {
+      left: 102px;
+    }
+  }
+
+  &__video-length {
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    padding-right: 5px;
+    margin-top: 5.74px;
+    // margin-bottom:10px;
+    /* identical to box height */
+
+    color: #2cc0ff;
+  }
+
+  &__inner-box2 {
+    position: absolute;
+    width: 456px;
+    // height: 470px;
+    // height: 100%;
+    left: 7px;
+    top: 13px;
+    // border: 1px solid black;
+    background: #fcfcfc;
+    box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
+      inset 30px 2px 30px rgba(255, 255, 255, 0.8);
+    border-radius: 66px 66px 0 0;
+    border: 0.5px solid #d3d7db;
+    border-bottom: none;
+    @include mobile {
+      width: 286px;
+      height:270px;
+      border-radius: 37.2959px 37.2959px 0 0;
+      top: 7px;
+    }
+  }
+
+  &__inner-box2:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
+      inset 30px 2px 30px rgba(255, 255, 255, 0.8);
+    border-radius: 66px 66px 0 0;
+    opacity: 0.5;
+    border-bottom: none;
+    @include mobile {
+      border-radius: 37.2959px 37.2959px 0 0;
+    }
+  }
+}
+
+.cirtdanLogo {
+  border-radius: 50%;
+  @include mobile {
+    height: 29px;
+  }
+}
+.cirtdan-phrase {
+  font-family: "myfont";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+
+  color: #000000;
+  @include mobile {
+    font-size: 10.7px;
+  }
+}
+
+.additional-box {
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: row;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14.1002px;
+  line-height: 14px;
+  /* identical to box height */
+  font-family: "myfont";
+  color: #000000;
+
+  @include mobile {
+    font-size: 7.97px;
+    top: 0px;
+  }
+}

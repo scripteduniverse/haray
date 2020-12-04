@@ -1,0 +1,251 @@
+.wrapper-for-modal {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.08);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  align-items: center;
+}
+
+.modal-window {
+  min-height: 750px;
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+  background-color: white;
+  box-shadow: 0px 27px 63px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  border: 0.1px solid white;
+}
+
+.left-section {
+  height: 100%;
+  width: 100%;
+  border-right: 1px solid black;
+  background-color: #4058a1;
+  border-radius: 15px 0 0 15px;
+}
+
+.right-section {
+  height: 100%;
+  position: relative;
+}
+
+.left-section-main-text {
+  font-family: Marcellus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 75px;
+  line-height: 103.5%;
+  color: #ffffff;
+  padding-left: 49.31px;
+  padding-right: 85px;
+  padding-top: 50px;
+  padding-bottom: 26px;
+}
+
+.left-section-additional-text {
+  font-family: "myfont", san-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 139.9%;
+  padding-left: 49.31px;
+  color: #ffffff;
+}
+
+.form-section-head-text {
+  font-family: "myfont";
+  font-style: normal;
+  font-weight: 250;
+  font-size: 44px;
+  padding-top: 50px;
+  line-height: 110%;
+  padding-left: 60px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.form-section-additional-text {
+  font-family: "myfont";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 139.9%;
+
+  padding-left: 60px;
+  color: #000000;
+
+  opacity: 0.6;
+}
+
+.form-box {
+  margin-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 139.9%;
+  /* identical to box height, or 28px */
+
+  color: #000000;
+}
+
+.company-input {
+  color: #000000;
+  padding-left: 30px;
+  width: 459.81px;
+  height: 79.92px;
+  background: #ffffff;
+  /* box-shadow: 0px 27px 63px rgba(0, 0, 0, 0.08); */
+  border-radius: 15px;
+  border: none;
+  font-family: "myfont";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 139.9%;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 17px;
+
+  &:focus {
+    background-color: #f8f8f8;
+  }
+}
+
+.name-surname-box {
+  color: #000000;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 459.81px;
+  height: 79.92px;
+  justify-content: space-between;
+  &:focus {
+    background-color: #f8f8f8;
+  }
+}
+
+.name-input {
+  padding-left: 30px;
+  width: 219.91px;
+  height: 79.92px;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 17px;
+  font-family: "myfont";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 139.9%;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 17px;
+  &:focus {
+    background-color: #f8f8f8;
+  }
+}
+
+.surname-input {
+  padding-left: 30px;
+  width: 219.91px;
+  height: 79.92px;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 17px;
+  font-family: "myfont";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 139.9%;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 17px;
+  &:focus {
+    background-color: #f8f8f8;
+  }
+}
+
+.email-input {
+  padding-left: 30px;
+  margin-top: 20px;
+  width: 459.81px;
+  height: 79.92px;
+  background: #ffffff;
+  //   box-shadow: 0px 27px 63px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  font-family: "myfont";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 139.9%;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 17px;
+  &:focus {
+    background-color: #f8f8f8;
+  }
+}
+
+.input-button {
+  margin-top: 20px;
+  width: 459.81px;
+  height: 79.92px;
+  background: #ffffff;
+  box-shadow: 0px 27px 63px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  font-family: "myfont";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 139.9%;
+  color: #4058a1;
+  border: 2px solid #4058a1;
+}
+
+.company-input:focus {
+  outline: none;
+}
+
+.name-input:focus {
+  outline: none;
+}
+
+.surname-input:focus {
+  outline: none;
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+.input-button {
+  outline: none;
+}
+
+.text-under-button {
+  padding-top: 40px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 139.9%;
+  /* or 17px */
+
+  color: #000000;
+
+  opacity: 0.6;
+  font-family: "myfont";
+}
+
+.close-button {
+  width: 200px;
+  // background-color: red;
+  position: absolute;
+  left: 490px;
+  top: 60px;
+}
