@@ -176,6 +176,7 @@
     inset -30px -2px 30px rgba(64, 82, 128, 0.1),
     inset 30px 2px 30px rgba(255, 255, 255, 0.4);
   border-radius: 0 0 68px 68px;
+  z-index:3000;
   @include mobile {
     width: 300px;
     height: 277px;
