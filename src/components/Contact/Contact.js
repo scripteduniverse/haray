@@ -71,6 +71,7 @@ export default function HowDoesItWork() {
               <div className="Contact__chingiz"></div>
             </div>
           </div>
+          <button className="Contact__send-request">Send request</button>
         </section>
         <div className="footer-wrapper">
           <footer className="footer">

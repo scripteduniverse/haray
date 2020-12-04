@@ -5,6 +5,9 @@
   padding-bottom: 200px;
   padding-top: 220px;
   text-align: center;
+  @include mobile {
+    padding-bottom: 65px;
+  }
   //include mobile i sdelat procentami chtob na mobilkax bilo
   //   height: 100vh;
   &__main-text {
@@ -30,6 +33,37 @@
       text-align: center;
     }
   }
+  &__send-request {
+    display: none;
+    margin-top: 13px;
+    align-items: center;
+    background: #ffffff;
+    color: #4058a1;
+    width: 173px;
+    height: 58px;
+    right: 0.5px;
+    border: none;
+    outline: none;
+
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 130%;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 0px rgba(209, 204, 204, 0.25);
+    border-radius: 70px;
+    font-family: "myfont";
+    @include mobile {
+      width: 102px;
+      height: 36px;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 100%;
+      margin-top: 45px;
+      display: inline-block;
+    }
+  }
+
   &__additional-text {
     font-style: normal;
     font-weight: 250;
