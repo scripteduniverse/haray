@@ -20,7 +20,12 @@ export default function MainPage() {
               printing and typesetting industry
             </p>
           </div>
-          <div className="MainPage__animation-container"></div>
+          <div className="MainPage__animation-container">
+            {/* <div className="MainPage__animation-container-top-bar"></div> */}
+            <div className="MainPage__animation-container-box-1"></div>
+            <div className="MainPage__animation-container-box-2"></div>
+            <div className="MainPage__animation-container-box-3"></div>
+          </div>
         </section>
       </div>
     </React.Fragment>
