@@ -103,7 +103,7 @@
 .Navbar {
   opacity: 1;
   &__wrapper {
-    position: fixed;
+    position: sticky;
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
