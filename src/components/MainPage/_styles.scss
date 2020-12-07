@@ -62,6 +62,7 @@
     flex-direction: row;
     width: 80%;
     align-items: center;
+    justify-content: space-between;
 
     // @media only screen and(max-width:920px) {
     //   padding-top: 5px;
@@ -71,12 +72,14 @@
       flex-direction: column;
     }
   }
+  
   &__animation-container {
-    width: 467px;
+    width: 30%;
     height: 416px;
     position: relative;
-    margin-top: 100px;
-  
+    margin-top:-100px;
+    // left:200px;
+
     box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
     border-radius: 8.97288px;
 
@@ -84,11 +87,12 @@
   }
   &__animation-container-box-1 {
     position: absolute;
-    width: 467.87px;
+    width: 467px;
     height: 385.64px;
     background-color: white;
     box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
     border-radius: 8.97288px;
+    z-index: 3;
   }
 
   &__animation-container-box-2 {
@@ -101,6 +105,7 @@
     opacity: 0.89;
     box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
     border-radius: 8.97288px;
+    z-index: 2;
   }
   &__animation-container-box-3 {
     position: absolute;
@@ -112,6 +117,7 @@
     opacity: 0.6;
     box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
     border-radius: 8.97288px;
+    z-index: 1;
   }
 
   &__content-container {
@@ -122,8 +128,77 @@
     }
   }
   &__animation-container-top-bar {
-    width: 100%;
-    height: 50px;
-    background-color: red;
+    width: 95%;
+    height: 52px;
+    margin: 25px auto;
+    padding-left: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.TopBar {
+  &__logo-box {
+    // width: 52px;
+    display: flex;
+    flex-direction: row;
+  }
+  &__video-name-box {
+    margin-left: 15px;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #000000;
+  }
+  &__video-length {
+    display: flex;
+    flex-direction: column;
+    padding-right: 19px;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height */
+
+    color: #56c54c;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 3px 0px;
+  }
+  &__video-length-box {
+    border: 1px solid #baff8f;
+    border-radius: 34px;
+    width: 75px;
+    text-align: center;
+    height: 14px;
+    // padding-top: 2px;
+  }
+  &__video-length-itself {
+    text-align: end;
+    padding-right: 3px;
+    margin-top: 10px;
+  }
+}
+
+.additional-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.VideoBar {
+  display: flex;
+  justify-content: center;
+  &__youtube {
+    width: 428.13px;
+    height: 262.78px;
   }
 }

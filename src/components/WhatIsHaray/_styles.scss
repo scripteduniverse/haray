@@ -74,9 +74,24 @@
       flex-direction: column;
     }
   }
+
+  &__animation-container-main {
+    width: 40%;
+    position: relative;
+  }
   &__animation-container {
-    width: 50%;
+    position: absolute;
+    width: 100%;
+   
+    // justify-content: center;
+    border-bottom: 208px solid transparent;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+
+    background-image: url("../../assets/images/rectangle.png");
     // background-color: #c5d8ff;
+    background-repeat: no-repeat;
+    background-size: 616px 216px;
   }
   &__content-container {
     margin: auto 0;
@@ -84,5 +99,18 @@
     @include mobile {
       width: 100%;
     }
+  }
+  &__logo {
+    height: 100px;
+  }
+  &__animation-additional-box-2 {
+    width: 577px;
+    height: 221px;
+
+    background: #ffffff;
+    border: 1.28184px solid rgba(0, 0, 0, 0.09);
+    box-sizing: border-box;
+    box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
+    border-radius: 15px;
   }
 }

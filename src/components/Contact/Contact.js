@@ -5,10 +5,14 @@ import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
 import YoutubeLogo from "../../assets/images/Vector (4).svg";
 import Logo1 from "../../assets/images/logo-footer.png";
 
-export default function HowDoesItWork() {
+export default function HowDoesItWork(props) {
   return (
     <React.Fragment>
-      <div id="contact" className="Contact__container">
+      <div
+        id="contact"
+        className="Contact__container"
+        style={{ backgroundColor: props.backgroundColor }}
+      >
         <div className="cellphone-2">
           <div className="cellphone-2__inner-box2">
             <div className="Contact__inner-container">
@@ -73,8 +77,14 @@ export default function HowDoesItWork() {
           </div>
           <button className="Contact__send-request">Send request</button>
         </section>
-        <div className="footer-wrapper">
-          <footer className="footer">
+        <div
+          className="footer-wrapper"
+          style={{ backgroundColor: props.backgroundColor }}
+        >
+          <footer
+            className="footer"
+            style={{ backgroundColor: props.backgroundColor }}
+          >
             <div className="logo-n-copyright">
               <img src={Logo1} alt="logo" className="footer-logo"></img>
               <p className="copyright">Copyright © 2020 Haray LLC </p>

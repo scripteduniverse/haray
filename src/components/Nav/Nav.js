@@ -7,7 +7,7 @@ import Logo from "../../assets/images/logo_animation.svg";
 import ModalWindow from "../ModalWindow/ModalWindow";
 // import MobileModal from "../MobileModal/MobileModal";
 
-export default function Nav() {
+export default function Nav(props) {
   const [modalShow, setModalShow] = useState(false);
 
   const toggle = () => {
@@ -15,12 +15,14 @@ export default function Nav() {
     console.log("clicked");
   };
 
-  
   return (
     <React.Fragment>
       {/* <p>{setModalll}</p> */}
       <nav className="Navbar">
-        <div className="container">
+        <div
+          className="container"
+          style={{ backgroundColor: props.backgroundColor }}
+        >
           <div className="Navbar__wrapper">
             <div onClick={() => scroll.scrollToTop()} className="Navbar__logo">
               <ReactSVG src={Logo}></ReactSVG>

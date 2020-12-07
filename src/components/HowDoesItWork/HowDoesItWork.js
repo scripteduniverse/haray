@@ -6,10 +6,14 @@ import { ReactSVG } from "react-svg";
 import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
 import YoutubeLogo from "../../assets/images/Vector (4).svg";
 
-export default function HowDoesItWork() {
+export default function HowDoesItWork(props) {
   return (
     <React.Fragment>
-      <div id="howdoesitwork" className="HowDoesItWork__container">
+      <div
+        id="howdoesitwork"
+        className="HowDoesItWork__container"
+        style={{ backgroundColor: props.backgroundColor }}
+      >
         <section className="HowDoesItWork">
           <h2 className="HowDoesItWork__main-text">
             Monitoring <br /> keywords with API
