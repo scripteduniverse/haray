@@ -23,7 +23,10 @@ export default function Nav(props) {
           className="container"
           style={{ backgroundColor: props.backgroundColor }}
         >
-          <div className="Navbar__wrapper">
+          <div
+            className="Navbar__wrapper"
+            style={{ backgroundColor: props.backgroundColor }}
+          >
             <div onClick={() => scroll.scrollToTop()} className="Navbar__logo">
               <ReactSVG src={Logo}></ReactSVG>
             </div>
