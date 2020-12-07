@@ -5,6 +5,7 @@ import "./_styles.scss";
 import { ReactSVG } from "react-svg";
 import Logo from "../../assets/images/logo_animation.svg";
 import ModalWindow from "../ModalWindow/ModalWindow";
+// import MobileModal from "../MobileModal/MobileModal";
 
 export default function Nav() {
   const [modalShow, setModalShow] = useState(false);
@@ -14,9 +15,7 @@ export default function Nav() {
     console.log("clicked");
   };
 
-  // const print = () => {
-  //   console.log("clicked");
-  // };
+  
   return (
     <React.Fragment>
       {/* <p>{setModalll}</p> */}

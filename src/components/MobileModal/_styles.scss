@@ -1,0 +1,134 @@
+.MobileModal {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  &__main-text {
+    padding-top: 35px;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 139.9%;
+    /* or 34px */
+
+    color: #000000;
+  }
+  &__additional-text {
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 139.9%;
+    /* or 24px */
+
+    color: #000000;
+
+    opacity: 0.6;
+  }
+  &__company-name {
+    margin-top: 38px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    background: white;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 130%;
+    outline: none;
+    /* identical to box height, or 22px */
+
+    color: #000000;
+    &:focus {
+      background: #f8f8f8;
+    }
+  }
+
+  &__first-name {
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    background: white;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 130%;
+    outline: none;
+    &:focus {
+      background-color: #f8f8f8;
+    }
+  }
+  &__second-name {
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    background: white;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 130%;
+    outline: none;
+    &:focus {
+      background-color: #f8f8f8;
+    }
+  }
+  &__email {
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    background: white;
+    border: 1px solid #dedede;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 130%;
+    outline: none;
+    &:focus {
+      background-color: #f8f8f8;
+      border: 1px solid #dedede;
+    }
+  }
+
+  &__input-button {
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    background: #4058a1;
+    border: 2px solid #dedede;
+    border-radius: 8px;
+    color: white;
+  }
+  &__text-under-button {
+    padding-top: 27px;
+    font-family: "myfont";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 139.9%;
+    /* or 17px */
+
+    color: #000000;
+
+    opacity: 0.6;
+  }
+}
