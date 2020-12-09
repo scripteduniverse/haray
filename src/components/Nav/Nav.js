@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { ReactSVG } from "react-svg";
 
 import "./_styles.scss";
-import { ReactSVG } from "react-svg";
+
 import Logo from "../../assets/images/logo_animation.svg";
 import ModalWindow from "../ModalWindow/ModalWindow";
 // import MobileModal from "../MobileModal/MobileModal";

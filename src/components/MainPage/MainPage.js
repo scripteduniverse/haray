@@ -1,16 +1,13 @@
+import React from "react";
+
 import "./_styles.scss";
-import Nav from "../Nav/Nav";
-import * as Scroll from "react-scroll";
-import { ReactSVG } from "react-svg";
+
 import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
 import YoutubeLogo from "../../assets/images/youtube.svg";
-
-import React from "react";
 
 export default function MainPage(props) {
   return (
     <React.Fragment>
-      {/* <Nav /> */}
       <div
         id="mainpage"
         className="MainPage"

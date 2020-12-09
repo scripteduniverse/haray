@@ -1,8 +1,9 @@
 import React from "react";
-import "./_styles.scss";
-import Logo from "../../assets/images/Vector.svg";
 import { ReactSVG } from "react-svg";
-// import ReactPlayer from "react-player";
+
+import "./_styles.scss";
+
+import Logo from "../../assets/images/Vector.svg";
 import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
 import YoutubeLogo from "../../assets/images/Vector (4).svg";
 

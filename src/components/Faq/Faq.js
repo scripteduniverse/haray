@@ -1,7 +1,9 @@
 import React from "react";
 import Faq from "react-faq-component";
-import "./_styles.scss";
 import { Link } from "react-router-dom";
+
+import "./_styles.scss";
+
 import Logo1 from "../../assets/images/logo-footer.png";
 
 const data = {

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "./_styles.scss";
-import Close from "../../assets/images/close.svg";
 import { ReactSVG } from "react-svg";
+
+import "./_styles.scss";
+
+import Close from "../../assets/images/close.svg";
 
 const ModalWindow = (props) => {
   const [company, setCompany] = useState("");
@@ -54,7 +56,6 @@ const ModalWindow = (props) => {
               The user profiles are being shown to the <br />
               user based on the preference that
             </p>
-            {/* <form></form> */}
           </div>
           <form className="form-box" onSubmit={handleSubmit}>
             <input

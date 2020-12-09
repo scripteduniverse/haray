@@ -8,8 +8,7 @@
   @include mobile {
     padding-bottom: 65px;
   }
-  //include mobile i sdelat procentami chtob na mobilkax bilo
-  //   height: 100vh;
+
   &__main-text {
     font-family: Marcellus;
     font-family: Marcellus;
@@ -20,7 +19,6 @@
 
     @media only screen and(max-width:1570px) {
       font-size: 4rem;
-      // padding-top: 50px;
       line-height: 68.32px;
     }
 
@@ -74,21 +72,16 @@
     @media only screen and(max-width:920px) {
       font-size: 18px;
     }
-
-    /* or 36px */
-
     color: #000000;
   }
   &__container {
     width: 100%;
     height: 100%;
-    background-color: #c5d8ff;
-    // height: 100%;
+    background: #c5d8ff;
   }
 
   &__inner-container {
     width: 456px;
-    // position: relative;
     margin: 0 auto;
     background: white;
     box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
@@ -176,7 +169,7 @@
     inset -30px -2px 30px rgba(64, 82, 128, 0.1),
     inset 30px 2px 30px rgba(255, 255, 255, 0.4);
   border-radius: 0 0 68px 68px;
-  z-index:3000;
+  z-index: 3000;
   @include mobile {
     width: 300px;
     height: 277px;
@@ -189,14 +182,11 @@
     flex-direction: row;
     align-items: center;
     padding: 7px 15px;
-    // position: absolute;
     width: 112.27px;
     height: 36px;
     left: 8.82px;
-    // top: 16px;
     background: #e4ac55;
     border-radius: 61px;
-    // z-index: 2;
     margin-top: 20px;
     margin-left: 9px;
     @include mobile {
@@ -215,8 +205,6 @@
     width: 456px;
     height: 375px;
     left: 7px;
-    // top: 13px;
-    // border: 1px solid black;
     background: white;
     box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
       inset 30px 2px 30px rgba(255, 255, 255, 0.8);
@@ -233,7 +221,6 @@
     width: 95%;
     height: 68px;
     position: relative;
-    // top: 10px;
     margin: 0 auto;
     @include mobile {
       width: 100%;
@@ -243,7 +230,6 @@
   }
   &__middle-bar-section {
     width: 100%;
-    // background-color: yellow;
     top: 20px;
     display: flex;
     flex-direction: row;
@@ -270,12 +256,7 @@
     font-weight: 300;
     font-size: 12px;
     line-height: 12px;
-    // left: 200px;
     background: white;
-    // box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
-    //   inset 30px 2px 30px rgba(255, 255, 255, 0.8);
-    // border-radius: 66px;
-
     border: 1px solid #baff8f;
     box-sizing: border-box;
     border-radius: 34px;
@@ -300,9 +281,6 @@
     line-height: 12px;
     padding-right: 5px;
     margin-top: 10px;
-    // margin-bottom:10px;
-    /* identical to box height */
-
     color: #2cc0ff;
   }
   &__video-bar {
@@ -314,7 +292,6 @@
   &__youtube {
     width: 100%;
     height: 252.18px;
-    // margin: 0 auto;
     border-radius: 8.97288px;
     @include mobile {
       height: 148.49px;
@@ -330,7 +307,6 @@
 }
 
 .footer {
-  // padding-top: 100px;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -398,7 +374,6 @@
   height: 50px;
   border-radius: 50%;
   background-color: #4058a1;
-  /* position: relative; */
   @include mobile {
     margin-top: 20px;
   }
@@ -411,7 +386,6 @@
   line-height: 34.98px;
   font-size: 25px;
   margin-top: 5px;
-  // top: -7px;
   left: 20px;
   font-family: "myfont", sans-serif;
 }

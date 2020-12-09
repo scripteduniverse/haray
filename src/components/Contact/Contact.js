@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./_styles.scss";
-import Logo from "../../assets/images/Vector.svg";
+
 import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
 import YoutubeLogo from "../../assets/images/Vector (4).svg";
 import Logo1 from "../../assets/images/logo-footer.png";
-import { Link } from "react-router-dom";
 
 export default function HowDoesItWork(props) {
   return (

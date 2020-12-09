@@ -6,8 +6,6 @@
   padding-bottom: 200px;
   padding-top: 220px;
   text-align: center;
-  //include mobile i sdelat procentami chtob na mobilkax bilo
-
   &__main-text {
     font-family: Marcellus;
     font-style: normal;
@@ -16,7 +14,6 @@
     line-height: 98.32px;
     @media only screen and(max-width:1570px) {
       font-size: 4rem;
-      // padding-top: 50px;
       line-height: 68.32px;
     }
 
@@ -26,7 +23,6 @@
     @include mobile {
       font-size: 2rem;
       line-height: 2.2rem;
-
       padding-top: 20px;
       text-align: center;
     }
@@ -48,11 +44,7 @@
       font-size: 1rem;
       justify-content: center;
       text-align: center;
-      // display: inline-block;
-      // margin: 0 auto;
     }
-
-    /* or 36px */
 
     color: #000000;
   }
@@ -60,11 +52,9 @@
     width: 100%;
     height: 100%;
     background-color: #f6d7b9;
-    // height: 100%;
   }
   &__inner-container {
     width: 456px;
-    // position: relative;
     margin: 0 auto;
     background: white;
     box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
@@ -90,7 +80,7 @@
     inset -30px -2px 30px rgba(64, 82, 128, 0.1),
     inset 30px 2px 30px rgba(255, 255, 255, 0.4);
   border-radius: 68px 68px 0 0;
-  z-index:3000; 
+  z-index: 3000;
   @include mobile {
     width: 300px;
     height: 277px;
@@ -105,14 +95,6 @@
     height: 93px;
     margin: 0 auto;
     border-radius: 66px 66px 0 0;
-    // opacity: 0.12;
-
-    // background: #f1f3f6;
-    // box-shadow: 80px 60px 60px rgba(0, 0, 0, 0.14),
-    //   inset -30px -2px 30px rgba(64, 82, 128, 0.1),
-    //   inset 30px 2px 30px rgba(255, 255, 255, 0.4);
-    // border-radius: 68px 68px 0 0;
-
     border-bottom: 1px solid #d7d8da;
     @include mobile {
       width: 285px;
@@ -125,14 +107,11 @@
     flex-direction: row;
     align-items: center;
     padding: 7px 15px;
-    // position: absolute;
     width: 112.27px;
     height: 36px;
     left: 8.82px;
-    // top: 16px;
     background: #e4ac55;
     border-radius: 61px;
-    // z-index: 2;
     margin-top: 20px;
     margin-left: 9px;
     @include mobile {
@@ -143,7 +122,6 @@
       top: 0px;
       border-radius: 34.4704px;
       margin-top: 15px;
-  
     }
   }
 
@@ -154,8 +132,8 @@
     @include mobile {
       width: 3.8px;
       height: 3.8px;
-      margin-top:-13px;
-      margin-left:-5px;
+      margin-top: -13px;
+      margin-left: -5px;
     }
   }
 
@@ -166,7 +144,6 @@
     font-size: 25px;
     line-height: 90%;
     margin-top: -3px;
-    /* or 22px */
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -174,7 +151,6 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    // margin: 6.93093px 0px;
     color: #ffffff;
     @include mobile {
       font-size: 14.13px;
@@ -192,7 +168,6 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 100%;
-    /* identical to box height, or 16px */
     text-align: right;
     color: #4058a1;
     @include mobile {
@@ -210,9 +185,9 @@
     height: 28px;
     position: relative;
     background: #e4ac55;
-    @include mobile{
-      width:15.9px;
-      height:15.9px;
+    @include mobile {
+      width: 15.9px;
+      height: 15.9px;
     }
   }
   &__chingiz:before,
@@ -238,10 +213,6 @@
     }
   }
 
-  // &__test {
-  //   margin-top: 28px;
-  //   margin-left: 20px;
-  // }
   &__youtube {
     width: 100%;
     height: 252.18px;
@@ -256,7 +227,6 @@
     width: 95%;
     height: 68px;
     position: relative;
-    // top: 10px;
     margin: 20px auto;
     @include mobile {
       width: 100%;
@@ -269,14 +239,13 @@
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    @include mobile{
-      width:100%;
+    @include mobile {
+      width: 100%;
     }
   }
 
   &__middle-bar-section {
     width: 100%;
-    // background-color: yellow;
     top: 20px;
     display: flex;
     flex-direction: row;
@@ -303,12 +272,7 @@
     font-weight: 300;
     font-size: 12px;
     line-height: 12px;
-    // left: 200px;
     background: white;
-    // box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
-    //   inset 30px 2px 30px rgba(255, 255, 255, 0.8);
-    // border-radius: 66px;
-
     border: 1px solid #baff8f;
     box-sizing: border-box;
     border-radius: 34px;
@@ -333,20 +297,14 @@
     line-height: 12px;
     padding-right: 5px;
     margin-top: 5.74px;
-    // margin-bottom:10px;
-    /* identical to box height */
-
     color: #2cc0ff;
   }
 
   &__inner-box2 {
     position: absolute;
     width: 456px;
-    // height: 470px;
-    // height: 100%;
     left: 7px;
     top: 13px;
-    // border: 1px solid black;
     background: #fcfcfc;
     box-shadow: inset -30px -2px 30px rgba(64, 82, 128, 0.1),
       inset 30px 2px 30px rgba(255, 255, 255, 0.8);
@@ -355,7 +313,7 @@
     border-bottom: none;
     @include mobile {
       width: 286px;
-      height:270px;
+      height: 270px;
       border-radius: 37.2959px 37.2959px 0 0;
       top: 7px;
     }
@@ -409,7 +367,6 @@
   font-weight: 300;
   font-size: 14.1002px;
   line-height: 14px;
-  /* identical to box height */
   font-family: "myfont";
   color: #000000;
 

@@ -1,10 +1,8 @@
-import "./_styles.scss";
-// import Logo from "../../assets/images/rectangle.png";
-
 import React from "react";
-import ReactPlayer from "react-player";
 
-const Logo = require("../../assets/images/rectangle.png");
+import "./_styles.scss";
+
+// const Logo = require("../../assets/images/rectangle.png");
 
 export default function WhatIsHaray(props) {
   return (
