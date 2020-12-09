@@ -10,6 +10,7 @@ import React from "react";
 export default function MainPage(props) {
   return (
     <React.Fragment>
+      {/* <Nav /> */}
       <div
         id="mainpage"
         className="MainPage"
@@ -27,14 +28,13 @@ export default function MainPage(props) {
               printing and typesetting industry
             </p>
           </div>
-          {/* <div className="MainPage__animation-container">
+          <div className="MainPage__animation-container">
             <div className="MainPage__animation-container-box-1">
               <div className="MainPage__animation-container-top-bar">
                 <div className="TopBar__logo-box">
                   {" "}
                   <img
                     alt="cirtdan"
-                    W
                     className="cirtdanLogo"
                     src={CirtdanLogo}
                   ></img>
@@ -71,7 +71,7 @@ export default function MainPage(props) {
             </div>
             <div className="MainPage__animation-container-box-2"></div>
             <div className="MainPage__animation-container-box-3"></div>
-          </div> */}
+          </div>
         </section>
       </div>
     </React.Fragment>

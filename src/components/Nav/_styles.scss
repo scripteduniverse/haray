@@ -84,19 +84,14 @@
     );
   }
 }
-// body {
-//   background-color: red;
-// }
 
 .container {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #c5d8ff;
   @include mobile {
     width: 100%;
     position: sticky;
-    background-color: #c5d8ff;
   }
 }
 
@@ -112,20 +107,20 @@
     flex-direction: row;
     width: 80%;
     justify-content: space-between;
-    /* identical to box height, or 22px */
+
     text-align: center;
     color: #454545;
     font-family: "myfont";
     padding-top: 52px;
     z-index: 2000;
-    @media only screen and(max-width:920px) {
-      // top: 30px;
-    }
+
     @include mobile {
       padding-top: 28px;
       width: 85%;
       position: sticky;
-      background-color: #c5d8ff;
+    }
+    @media only screen and(min-width:1570px) {
+      font-size: 1.5rem;
     }
   }
   &__nav {
@@ -134,10 +129,12 @@
     display: table;
     flex-direction: row;
     list-style-type: none;
-    width: 43.3%;
+    width: 50%;
+    display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    @include mobile {
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s !important;
+    @media only screen and(max-width:922px) {
       display: none;
     }
   }
@@ -173,6 +170,9 @@
     box-shadow: 0px 4px 0px rgba(209, 204, 204, 0.25);
     border-radius: 70px;
     font-family: "myfont";
+    &:hover {
+      cursor: pointer;
+    }
     @include mobile {
       width: 102px;
       height: 36px;
@@ -181,15 +181,12 @@
       line-height: 100%;
       margin-top: 25px;
     }
-    // @media only screen and(min-width:1440px) {
-    //   font-size: 2rem;
-    //   width: 203px;
-    //   height: 58px;
-    //   font-weight: 300;
-    //   font-size: 14px;
-    //   line-height: 100%;
-    //   font-size: 27px;
-    // }
+    @media only screen and(min-width:1570px) {
+      font-size: 1.5rem;
+      width: 273px;
+      height: 68px;
+      margin-top: 20px;
+    }
   }
 }
 
@@ -200,9 +197,9 @@
   @include mobile {
     width: 83px;
   }
-
-  // height:500px;
-  // width:500px;
+  @media only screen and(min-width:1570px) {
+    margin-top: 7px;
+  }
 }
 
 .logo:hover {

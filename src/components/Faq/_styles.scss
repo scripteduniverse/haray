@@ -1,0 +1,67 @@
+@import "src/assets/styles/mixins";
+
+.faq-container {
+  width: 60%;
+  margin: 5% auto;
+  font-family: "myfont";
+  font-weight: 300;
+  margin-bottom: 200px;
+  //   font-size: 34px;
+  //   line-height: 44.2px;
+  display: flex;
+  flex-direction: column;
+  @include mobile {
+    margin-bottom: 100px;
+    width:75%;
+  }
+  &__header-text {
+    font-family: Marcellus;
+    display: inline-block;
+    font-size: 75px;
+    height: 100px;
+    text-align: center;
+    padding-bottom: 70px;
+    // margin-top: 50px;
+    border-bottom: 1px solid #b3b3b3;
+
+    @media only screen and(max-width:1570px) {
+      font-size: 60px;
+    }
+    @include mobile {
+      font-size: 40px;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+.faq-row-wrapper {
+  .faq-title {
+    font-size: 100px;
+  }
+
+  .faq-body {
+    // font-size: 100px;
+    .faq-row {
+      // font-size: 100px;
+      .row-title {
+        @include mobile {
+          font-size: 20px;
+        }
+        @media only screen and(max-width:1570px) {
+          font-size: 20px;
+        }
+      }
+
+      .row-content {
+        .row-content-text {
+          @include mobile {
+            font-size: 15px;
+          }
+          @media only screen and(max-width:1570px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

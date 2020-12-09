@@ -12,7 +12,7 @@ export default function WhatIsHaray(props) {
       <div
         id="whatisharay"
         className="WhatIsHaray"
-        style={{ backgroundColor: props.backgroundColor }}
+        // style={{ backgroundColor: props.backgroundColor }}
       >
         <section className="WhatIsHaray__container">
           <div className="WhatIsHaray__content-container">

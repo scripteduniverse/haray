@@ -3,11 +3,15 @@
 .MainPage {
   width: 100%;
   height: 100vh;
+  margin-top: -150px;
+  padding-top: 150px;
   display: flex;
   flex-direction: row;
   background-color: #c5d8ff;
   @include mobile {
     flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 50px;
   }
   &__main-text {
     // padding-top: 200px;
@@ -29,7 +33,7 @@
     @include mobile {
       font-size: 2.7rem;
       line-height: 2.8rem;
-
+      margin-top: 150px;
       padding-top: 20px;
       text-align: center;
     }
@@ -70,18 +74,25 @@
     @include mobile {
       min-width: 320px;
       flex-direction: column;
+      padding-bottom: 0px;
     }
   }
-  
+
   &__animation-container {
     width: 30%;
     height: 416px;
     position: relative;
-    margin-top:-100px;
+    margin-top: -100px;
+    display: flex;
     // left:200px;
 
-    box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
+    // box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
     border-radius: 8.97288px;
+    @include mobile {
+      width: 280px;
+      height: 227px;
+      margin-top: 60px;
+    }
 
     // background-color: #c5d8ff;
   }
@@ -93,6 +104,11 @@
     box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
     border-radius: 8.97288px;
     z-index: 3;
+    margin: 0 auto;
+    @include mobile {
+      width: 280px;
+      height: 227px;
+    }
   }
 
   &__animation-container-box-2 {
@@ -106,6 +122,12 @@
     box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
     border-radius: 8.97288px;
     z-index: 2;
+    @include mobile {
+      width: 260px;
+      height: 212px;
+      left: 9.65px;
+      top: 27px;
+    }
   }
   &__animation-container-box-3 {
     position: absolute;
@@ -118,6 +140,13 @@
     box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
     border-radius: 8.97288px;
     z-index: 1;
+    @include mobile {
+      width: 246px;
+      height: 201px;
+      top: 50.2px;
+      left: 15.16px;
+      
+    }
   }
 
   &__content-container {
@@ -135,6 +164,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include mobile {
+      margin: 18px auto;
+      padding-left: 11px;
+      height: 25px;
+    }
   }
 }
 
@@ -144,6 +178,7 @@
     display: flex;
     flex-direction: row;
   }
+
   &__video-name-box {
     margin-left: 15px;
     font-family: "myfont";
@@ -153,6 +188,11 @@
     line-height: 18px;
 
     color: #000000;
+    @include mobile {
+      font-size: 11px;
+      margin-left: 9px;
+      margin-top: -2px;
+    }
   }
   &__video-length {
     display: flex;
@@ -173,6 +213,10 @@
     order: 0;
     flex-grow: 0;
     margin: 3px 0px;
+    @include mobile {
+      font-size: 8px;
+      padding-right: 11px;
+    }
   }
   &__video-length-box {
     border: 1px solid #baff8f;
@@ -180,18 +224,28 @@
     width: 75px;
     text-align: center;
     height: 14px;
+    @include mobile {
+      width: 50px;
+    }
     // padding-top: 2px;
   }
   &__video-length-itself {
     text-align: end;
     padding-right: 3px;
     margin-top: 10px;
+    color: #2cc0ff;
+    @include mobile {
+      margin-top: 5px;
+    }
   }
 }
 
 .additional-box {
   display: flex;
   justify-content: space-around;
+  @include mobile {
+    height: 12px;
+  }
 }
 
 .VideoBar {
@@ -200,5 +254,15 @@
   &__youtube {
     width: 428.13px;
     height: 262.78px;
+    @include mobile {
+      width: 256px;
+      height: 156px;
+    }
+  }
+}
+.cirtdanLogo {
+  @include mobile {
+    width: 30.34px;
+    height: 30.34px;
   }
 }

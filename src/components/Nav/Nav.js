@@ -27,8 +27,10 @@ export default function Nav(props) {
             className="Navbar__wrapper"
             style={{ backgroundColor: props.backgroundColor }}
           >
-            <div onClick={() => scroll.scrollToTop()} className="Navbar__logo">
-              <ReactSVG src={Logo}></ReactSVG>
+            <div className="Navbar__logo">
+              <a href="/">
+                <ReactSVG src={Logo}></ReactSVG>
+              </a>
             </div>
             <ul className="Navbar__nav">
               <li className="Navbar__nav-item">
@@ -69,6 +71,11 @@ export default function Nav(props) {
                 >
                   Contact
                 </Link>
+              </li>
+              <li className="Navbar__nav-item">
+                <a href="/faq" className="Navbar__nav-link">
+                  Faq
+                </a>
               </li>
             </ul>
             <button onClick={() => toggle()} className="Navbar__send-request">

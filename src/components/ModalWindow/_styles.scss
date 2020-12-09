@@ -31,6 +31,7 @@
     height: 100vh;
     box-shadow: none;
     border-radius: 0;
+    padding-top:20px;
   }
 }
 
@@ -51,6 +52,7 @@
   position: relative;
   @media only screen and (max-width: 768px) {
     margin: 0 auto;
+   
   }
 }
 
@@ -315,6 +317,9 @@
   line-height: 139.9%;
   color: #4058a1;
   border: 2px solid #4058a1;
+  &:hover {
+    cursor: pointer;
+  }
 
   @media only screen and (max-width: 768px) {
     margin-top: 15px;
@@ -374,5 +379,8 @@
     left: 283px;
     top: 40px;
     width: 100px;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }

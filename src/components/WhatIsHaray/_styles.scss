@@ -98,6 +98,7 @@
     width: 50%;
     @include mobile {
       width: 100%;
+      margin:30% auto;
     }
   }
   &__logo {

@@ -4,6 +4,7 @@ import Logo from "../../assets/images/Vector.svg";
 import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
 import YoutubeLogo from "../../assets/images/Vector (4).svg";
 import Logo1 from "../../assets/images/logo-footer.png";
+import { Link } from "react-router-dom";
 
 export default function HowDoesItWork(props) {
   return (
@@ -95,12 +96,14 @@ export default function HowDoesItWork(props) {
               dongesi 4,9-cu mertebe
             </p>
             <p className="email">info@haray.az</p>
-            <div className="faq-block">
-              <p className="faq-itself">Suallar </p>
-              <div className="question-mark-circle">
-                <p className="question-mark-itself">?</p>
+            <Link to="/faq">
+              <div className="faq-block">
+                <p className="faq-itself">Suallar </p>
+                <div className="question-mark-circle">
+                  <p className="question-mark-itself">?</p>
+                </div>
               </div>
-            </div>
+            </Link>
           </footer>
         </div>
       </div>

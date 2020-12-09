@@ -39,17 +39,22 @@ export default function Layout() {
   var randomItem = color[Math.floor(Math.random() * color.length)];
   return (
     <React.Fragment>
-      <Nav backgroundColor={randomItem} />
+      {/* <Nav backgroundColor={randomItem} /> */}
       {/* <ReactPageScroller
         pageOnChange={() => handlePageChange()}
         onBeforePageScroll={() => handleBeforePageChange()}
         customPageNumber={setCurrentPage}> */}
 
-      <MainPage backgroundColor={randomItem} />
+      {/* <MainPage backgroundColor={randomItem} />
       <WhatIsHaray backgroundColor={randomItem} />
       <HowDoesItWork backgroundColor={randomItem} />
-      <Contact backgroundColor={randomItem} />
+      <Contact backgroundColor={randomItem} /> */}
       {/* </ReactPageScroller> */}
+    
+      <MainPage/>
+      <WhatIsHaray/>
+      <HowDoesItWork/>
+      <Contact/>
     </React.Fragment>
   );
 }

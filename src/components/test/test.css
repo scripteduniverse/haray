@@ -1,63 +1,43 @@
-body {
-    overflow: hidden;
-}
-
-​ @keyframes pulsar {
-    0% {
-        transform: rotate(20px);
-    }
-
-    40% {
-        transform: rotate(1030deg)
-    }
-
-    50% {
-        transform: rotate(-3deg);
-    }
-
-    70% {
-        transform: rotate(1030deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-​ .x91 {
-    width: 540px;
-    height: 540px;
-    border: 1px #000 solid;
+.x91 {
     position: absolute;
-    border-radius: 50%;
-    right: 30%;
-    top: 20%;
-}
-
-​ .x92 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    text-align: center;
-    ​ ​ transition: 1.2s cubic-bezier(.19, 1, .22, 1) 0s;
-    ​ transform: rotate(0deg);
-    ​ animation-name: pulsar;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: yellow;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+    top: -40px;
+    /* -child size/2 */
+    left: 110px;
+    /* parent size/2 - child size/2 */
+    /* transition: 1.2s cubic-bezier(.19, 1, .22, 1) 0s; */
+    /* 
+    margin: 50px auto;
+    animation-name: pulsar;
     animation-duration: 8s;
     animation-timing-function: easy-out;
     animation-delay: 0s;
     animation-direction: normal;
     animation-play-state: running;
     animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    ​
+    animation-iteration-count: infinite; */
+
+
+
 }
 
-​ ​ .x92:before {
-    display: inline-block;
-    content: '';
-    background: #4058A1;
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
+.x91:hover {
+
+    transform: rotate();
+}
+
+.main-circle {
+    top:100px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
 }
