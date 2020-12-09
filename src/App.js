@@ -6,7 +6,6 @@ import "./App.scss";
 import Layout from "./components/Layout/Layout";
 import FaqMain from "./components/Faq/Faq";
 import Nav from "./components/Nav/Nav";
-import Test from "./components/test/test";
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
         </Route>
       </Switch>
     </Router>
-    // <Test />
   );
 }
 

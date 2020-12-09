@@ -1,5 +1,4 @@
 
-
 @keyframes pulsar {
   0% {
     transform: rotate(0deg);
@@ -32,7 +31,6 @@
   100% {
     transform: rotate(30deg);
   }
-
 }
 
 .x91 {
@@ -45,19 +43,14 @@
   top: 10%;
 }
 
-/* Sharik 1 */
-
 .x92 {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   text-align: center;
-
   transition: 5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-
   transform: rotate(240deg);
-
   animation-name: pulsar;
   animation-duration: 8s;
   animation-timing-function: easy-out;
@@ -78,7 +71,6 @@
   border-radius: 50%;
 }
 
-/* Sharik 2 */
 
 .x93 {
   position: absolute;
@@ -87,11 +79,8 @@
   border-radius: 50%;
   text-align: center;
   top: 0;
-
   transition: 5s cubic-bezier(2, 1, 0.22, 1) 5s;
-
   transform: rotate(180deg);
-
   animation-name: pulsar2;
   animation-duration: 8s;
   animation-timing-function: easy-out;
