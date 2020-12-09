@@ -5,7 +5,7 @@ import "./_styles.scss";
 
 import Logo from "../../assets/images/Vector.svg";
 import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
-import YoutubeLogo from "../../assets/images/Vector (4).svg";
+import YoutubeLogo from "../../assets/images/youtube.svg";
 
 export default function HowDoesItWork(props) {
   return (

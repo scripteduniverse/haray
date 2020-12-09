@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./_styles.scss";
 
 import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
-import YoutubeLogo from "../../assets/images/Vector (4).svg";
+import YoutubeLogo from "../../assets/images/youtube.svg";
 import Logo1 from "../../assets/images/logo-footer.png";
 
 export default function HowDoesItWork(props) {

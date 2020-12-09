@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   background-color: #c5d8ff;
+
   @include mobile {
     flex-direction: column;
     padding-top: 0px;
@@ -23,6 +24,13 @@
     @media only screen and(max-width:1570px) {
       font-size: 4rem;
       line-height: 68.32px;
+    }
+
+    @media only screen and(max-width:1378px) {
+      min-width: 320px;
+      flex-direction: column;
+      padding-bottom: 0px;
+      text-align: center;
     }
 
     @include middle {
@@ -44,8 +52,13 @@
     line-height: 139.9%;
     font-family: "myfont";
     padding-top: 20px;
+
     @media only screen and(max-width:1570px) {
       font-size: 1.25rem;
+    }
+
+    @media only screen and(max-width:1378px) {
+      text-align: center;
     }
     @include middle {
       font-size: 1.25rem;
@@ -65,6 +78,11 @@
     width: 80%;
     align-items: center;
     justify-content: space-between;
+    @media only screen and(max-width:1378px) {
+      min-width: 320px;
+      flex-direction: column;
+      padding-bottom: 0px;
+    }
     @include mobile {
       min-width: 320px;
       flex-direction: column;
@@ -79,12 +97,16 @@
     margin-top: -100px;
     display: flex;
     border-radius: 8.97288px;
+
+    @media only screen and(max-width:1371px) {
+      margin-top: 50px;
+      width: 465px;
+    }
     @include mobile {
       width: 280px;
       height: 227px;
       margin-top: 60px;
     }
-
   }
   &__animation-container-box-1 {
     position: absolute;
@@ -134,7 +156,7 @@
       width: 246px;
       height: 201px;
       top: 50.2px;
-      left: 15.16px; 
+      left: 15.16px;
     }
   }
 
@@ -224,14 +246,17 @@
 .additional-box {
   display: flex;
   justify-content: space-around;
+  margin-left: -6px;
   @include mobile {
     height: 12px;
+
   }
 }
 
 .VideoBar {
   display: flex;
   justify-content: center;
+
   &__youtube {
     width: 428.13px;
     height: 262.78px;
@@ -245,5 +270,16 @@
   @include mobile {
     width: 30.34px;
     height: 30.34px;
+  }
+}
+
+.mock-video-itself {
+  width: 428px;
+  height: 262.78px;
+  outline: none;
+  @include mobile {
+    width: 262.34px;
+    height:150px;
+    
   }
 }

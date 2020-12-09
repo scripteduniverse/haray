@@ -1,0 +1,112 @@
+
+
+@keyframes pulsar {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(720deg);
+  }
+  70% {
+    transform: rotate(1030deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulsar2 {
+  0% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(200deg);
+  }
+
+  60% {
+    transform: rotate(700deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+
+}
+
+.x91 {
+  width: 540px;
+  height: 540px;
+  border: 1px #000 solid;
+  position: absolute;
+  border-radius: 50%;
+  right: 35%;
+  top: 10%;
+}
+
+/* Sharik 1 */
+
+.x92 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center;
+
+  transition: 5s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+
+  transform: rotate(240deg);
+
+  animation-name: pulsar;
+  animation-duration: 8s;
+  animation-timing-function: easy-out;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.x92:before {
+  top: 0;
+  display: inline-block;
+  content: "";
+  background: #4058a1;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+/* Sharik 2 */
+
+.x93 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center;
+  top: 0;
+
+  transition: 5s cubic-bezier(2, 1, 0.22, 1) 5s;
+
+  transform: rotate(180deg);
+
+  animation-name: pulsar2;
+  animation-duration: 8s;
+  animation-timing-function: easy-out;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.x93:before {
+  display: inline-block;
+  content: "";
+  background: #e4ac55;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}

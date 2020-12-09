@@ -14,7 +14,7 @@
     font-family: Marcellus;
     font-style: normal;
     font-weight: normal;
-    font-size: 6rem;
+    font-size: 5.5rem;
     line-height: 98.32px;
 
     @media only screen and(max-width:1570px) {
@@ -26,8 +26,8 @@
       font-size: 4rem;
     }
     @include mobile {
-      font-size: 2.7rem;
-      line-height: 2.8rem;
+      font-size: 2rem;
+      line-height: 2.2rem;
       text-align: center;
     }
   }
@@ -71,6 +71,9 @@
     margin-top: 45px;
     @media only screen and(max-width:920px) {
       font-size: 18px;
+    }
+    @include mobile {
+      font-size: 1rem;
     }
     color: #000000;
   }

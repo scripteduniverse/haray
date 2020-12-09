@@ -1,10 +1,11 @@
 import React from "react";
 
 import "./_styles.scss";
+import Video from "./CollegeStudentsTalking.mp4";
 
 import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
 import YoutubeLogo from "../../assets/images/youtube.svg";
-
+import Test from "../../components/test/test";
 export default function MainPage(props) {
   return (
     <React.Fragment>
@@ -26,6 +27,7 @@ export default function MainPage(props) {
             </p>
           </div>
           <div className="MainPage__animation-container">
+            <Test />
             <div className="MainPage__animation-container-box-1">
               <div className="MainPage__animation-container-top-bar">
                 <div className="TopBar__logo-box">
@@ -56,14 +58,14 @@ export default function MainPage(props) {
                 </div>
               </div>
               <div className="VideoBar">
-                <iframe
-                  className="VideoBar__youtube"
-                  src="https://www.youtube.com/embed/E7wJTI-1dvQ"
-                  frameborder="0"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  title="video"
-                />
+                <video
+                  controls
+                  loop
+                  autostart
+                  autoPlay
+                  src={Video}
+                  className="mock-video-itself"
+                ></video>
               </div>
             </div>
             <div className="MainPage__animation-container-box-2"></div>

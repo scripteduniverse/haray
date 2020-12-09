@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { TweenMax, Power3 } from "gsap";
-import "./test.css";
+import "./teststyles.scss";
 import { Rotate90DegreesCcwRounded } from "@material-ui/icons";
 import transitions from "@material-ui/core/styles/transitions";
 
@@ -26,10 +26,8 @@ function Test() {
   // }, []);
 
   return (
-    <div className="main-circle">
-      <div className="x91">
-        ​<div className="x92"></div>​
-      </div>
+    <div className="x91">
+      <div className="x92"></div>​<div class="x93"></div>​
     </div>
   );
 }
