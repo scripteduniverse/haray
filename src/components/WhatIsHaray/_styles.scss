@@ -84,6 +84,7 @@
     @include mobile {
       margin-top: -50px;
       width: 80%;
+      display: none;
     }
   }
   &__content-container {
