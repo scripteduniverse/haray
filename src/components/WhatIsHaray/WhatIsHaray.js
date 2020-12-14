@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Zoom from "react-reveal/Zoom";
+import { Spring, Transition } from "react-spring/renderprops";
+import { useSpring, animated, useTrail, a } from "react-spring";
+
 import "./_styles.scss";
 import Test from "../test/test";
 import Video from "../MainPage/CollegeStudentsTalking.mp4";
@@ -33,39 +35,67 @@ export default function WhatIsHaray(props) {
       >
         <section className="WhatIsHaray__container">
           <div className="WhatIsHaray__content-container">
-            <h2 className="WhatIsHaray__main-text animate__animated animate__fadeIn">
-              Your keywords <br /> from media
-              <br /> sources
+            <h2 className="WhatIsHaray__main-text">
+              <Spring
+                from={{
+                  opacity: 0,
+                }}
+                to={{
+                  opacity: 1,
+                }}
+                config={{ delay: 1000, duration: 3000 }}
+              >
+                {(props) => (
+                  <>
+                    <span className="abc" style={props}>
+                      Your keywords <br />
+                      from media <br />
+                      sources
+                    </span>
+                  </>
+                )}
+              </Spring>
             </h2>
-            <p className="WhatIsHaray__additional-text">
-              Lorem ipsum is simply dummy text of the
-              <br />
-              printing and typesetting industry
-            </p>
+            <Spring
+              from={{
+                opacity: 0,
+              }}
+              to={{
+                opacity: 1,
+              }}
+              config={{ delay: 1500, duration: 3000 }}
+            >
+              {(props) => (
+                <p className="WhatIsHaray__additional-text" style={props}>
+                  Lorem ipsum is simply dummy text of the
+                  <br />
+                  printing and typesetting industry
+                </p>
+              )}
+            </Spring>
           </div>
-          <Zoom when={scroll}>
-            <div className="WhatIsHaray__animation-container">
-              {/* <Test /> */}
-              <div className="WhatIsHaray__animation-container-box-1">
-                <div className="VideoBar-test">
-                  <video
-                    controls
-                    loop
-                    autostart
-                    autoPlay
-                    src={Video}
-                    className={`presTst`}
-                  ></video>
-                </div>
-              </div>
-              <div className="WhatIsHaray__animation-container-box-2">
-                <div className={"outer-2"}> </div>
-              </div>
-              <div className="WhatIsHaray__animation-container-box-3">
-                <div className={"outer-3"}> </div>
+
+          <div className="WhatIsHaray__animation-container">
+            {/* <Test /> */}
+            <div className="WhatIsHaray__animation-container-box-1">
+              <div className="VideoBar-test">
+                <video
+                  controls
+                  loop
+                  autostart
+                  autoPlay
+                  src={Video}
+                  className={`presTst`}
+                ></video>
               </div>
             </div>
-          </Zoom>
+            <div className="WhatIsHaray__animation-container-box-2">
+              <div className={"outer-2"}> </div>
+            </div>
+            <div className="WhatIsHaray__animation-container-box-3">
+              <div className={"outer-3"}> </div>
+            </div>
+          </div>
         </section>
       </div>
     </React.Fragment>

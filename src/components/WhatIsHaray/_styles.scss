@@ -81,6 +81,10 @@
     display: flex;
     justify-content: center;
     // background-color: yellow;
+    @include mobile {
+      margin-top: -50px;
+      width: 80%;
+    }
   }
   &__content-container {
     margin: auto 0;
@@ -126,6 +130,10 @@
       margin: 0 auto;
       z-index: 1;
       border-radius: 10px;
+      @include mobile {
+        width: 300px;
+        height: 150px;
+      }
     }
   }
   &__animation-container-box-3 {
@@ -144,6 +152,10 @@
       margin: 0 auto;
       z-index: 1;
       border-radius: 10px;
+      @include mobile {
+        width: 300px;
+        height: 150px;
+      }
     }
   }
 }
@@ -154,13 +166,31 @@
   justify-content: center;
   position: absolute;
   perspective: 500px;
+  @include mobile {
+    width: 300px;
+  }
+}
+
+@keyframes rotate_scale {
+  from {
+    transform-origin: 0 0 0;
+    transform: rotateX(0deg);
+  }
+  to {
+    transform-origin: 50% 50% 28px;
+    transform: rotateX(43deg);
+    transition: 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
 }
 .presTst {
   // Само видео
   width: 450px;
   height: 262px;
   outline: none;
-  transform-origin: 50% 50% 28px;
-  transform: rotateX(43deg);
   border-radius: 15px;
+  animation: rotate_scale 4s forwards;
+  @include mobile {
+    width: 250px;
+    height: 150px;
+  }
 }

@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Spring, Transition } from "react-spring/renderprops";
-import { useSpring, animated, useTrail, a } from "react-spring";
+import { Spring } from "react-spring/renderprops";
+import { useSpring } from "react-spring";
 import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import Slide from "react-reveal/Slide";
+import Flip from "react-reveal/Flip";
+
+// import Slide from "react-reveal/Slide";
 
 import { motion } from "framer-motion";
 
@@ -12,34 +17,6 @@ import CirtdanLogo from "../../assets/images/unnamed 1.jpg";
 import YoutubeLogo from "../../assets/images/youtube.svg";
 import Test from "../../components/test/test";
 
-// function Trail({ open, children, ...props }) {
-//   const items = React.Children.toArray(children);
-//   const trail = useTrail(items.length, {
-//     config: { mass: 500, tension: 2000, friction: 2000 },
-//     opacity: 1,
-//     x: open ? 0 : 20,
-//     height: open ? 300 : 0,
-//     from: { opacity: 0, x: 20, height: 0 },
-//   });
-//   return (
-//     <div className="trails-main" {...props}>
-//       <div>
-//         {trail.map(({ x, height, ...rest }, index) => (
-//           <a.div
-//             key={items[index]}
-//             className="trails-text"
-//             style={{
-//               ...rest,
-//               transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
-//             }}
-//           >
-//             <a.div style={{ height }}>{items[index]}</a.div>
-//           </a.div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
 export default function MainPage(props) {
   const [open, set] = useState(true);
   const [flipped, set1] = useState(false);
@@ -65,13 +42,6 @@ export default function MainPage(props) {
       >
         <section className="MainPage__container">
           <div className="MainPage__content-container">
-            {/* <Trail open={open}>
-              <h1 className="MainPage__main-text">
-                Grow your <br />
-                brand with <br />
-                Haray
-              </h1>
-            </Trail> */}
             <h1 className="MainPage__main-text">
               <Spring
                 from={{
@@ -113,12 +83,9 @@ export default function MainPage(props) {
           </div>
           <div className="MainPage__animation-container">
             <Test />
-            {/* <animated.div
-              className="MainPage__animation-container-box-1"
-              style={{ opacity: opacity.interpolate((o) => 1 - o), transform }}
-            > */}
-            <Fade delay={2000}>
+            <Fade delay={1300}>
               <div className="MainPage__animation-container-box-1">
+                {/* <Fade bottom delay={2100}> */}
                 <div className="MainPage__animation-container-top-bar">
                   <div className="TopBar__logo-box">
                     {" "}
@@ -147,14 +114,20 @@ export default function MainPage(props) {
                     <p className="TopBar__video-length-itself">12:38</p>
                   </div>
                 </div>
+                {/* </Fade> */}
               </div>
+            </Fade>
+            <Fade delay={1400}>
               <div className="MainPage__animation-container-box-2"></div>
+            </Fade>
+            <Fade delay={1500}>
               <div className="MainPage__animation-container-box-3"></div>
             </Fade>
+
             <motion.div
               className="VideoBar"
               animate={{ scale: 1.1 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 1 }}
             >
               <video
                 loop
@@ -162,16 +135,7 @@ export default function MainPage(props) {
                 src={Video}
                 className="mock-video-itself"
               ></video>
-
-              {/* <video
-                  width="400"
-                  autoplay=""
-                  loop=""
-                  className="mock-video-itself"
-                  src="https://www.w3schools.com/html/mov_bbb.mp4"
-                ></video> */}
             </motion.div>
-            {/* </animated.div> */}
           </div>
         </section>
       </div>

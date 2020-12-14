@@ -98,7 +98,6 @@
     margin-top: -100px;
     display: flex;
     border-radius: 8.97288px;
-   
 
     @media only screen and(max-width:1371px) {
       margin-top: 50px;
@@ -127,7 +126,7 @@
 
   &__animation-container-box-2 {
     position: absolute;
-    left: 19.65px;
+    left: 16.65px;
     top: 42px;
     width: 435.29px;
     height: 358.78px;
@@ -148,7 +147,7 @@
     width: 412.28px;
     height: 339.82px;
     top: 77.2px;
-    left: 31.16px;
+    left: 28.16px;
     background-color: white;
     opacity: 0.6;
     box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
@@ -258,19 +257,26 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  z-index: 5000;
-  width: 400px;
+  z-index: 3;
+  width: 420px;
   height: 262px;
   background-color: white;
   margin-top: 100px;
-  margin-left:33px;
+  margin-left: 23px;
+  border-radius: 2%;
+  @include mobile {
+    width: 226px;
+    height: 156px;
+    margin-top:70px;
+    margin-left:27px;
+  }
   // margin-left: 30px;
 
   &__youtube {
     width: 428.13px;
     height: 262.78px;
     @include mobile {
-      width: 256px;
+      width: 210px;
       height: 156px;
     }
   }
@@ -284,11 +290,12 @@
 
 .mock-video-itself {
   width: 388px;
+  border-radius: 5%;
   // height: 282.78px;
   outline: none;
   // border: 10px solid red;
   @include mobile {
-    width: 262.34px;
+    width: 225.34px;
     height: 150px;
   }
 }
