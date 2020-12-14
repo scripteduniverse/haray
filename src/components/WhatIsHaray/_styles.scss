@@ -59,6 +59,7 @@
     flex-direction: row;
     width: 80%;
     align-items: center;
+    justify-content: space-between;
 
     @media only screen and(max-width:920px) {
       padding-top: 135px;
@@ -74,34 +75,92 @@
     position: relative;
   }
   &__animation-container {
-    position: absolute;
-    width: 100%;
-    border-bottom: 208px solid transparent;
-    border-left: 120px solid transparent;
-    border-right: 120px solid transparent;
-    background-image: url("../../assets/images/rectangle.png");
-    background-repeat: no-repeat;
-    background-size: 616px 216px;
+    position: relative;
+    width: 30%;
+    height: 416px;
+    display: flex;
+    justify-content: center;
+    // background-color: yellow;
   }
   &__content-container {
     margin: auto 0;
     width: 50%;
     @include mobile {
       width: 100%;
-      margin:30% auto;
+      margin: 30% auto;
     }
   }
   &__logo {
     height: 100px;
   }
-  &__animation-additional-box-2 {
-    width: 577px;
-    height: 221px;
-
-    background: #ffffff;
-    border: 1.28184px solid rgba(0, 0, 0, 0.09);
-    box-sizing: border-box;
-    box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
-    border-radius: 15px;
+  //&__animation-additional-box-2 {
+  //  width: 577px;
+  //  height: 221px;
+  //  background: #ffffff;
+  //  border: 1.28184px solid rgba(0, 0, 0, 0.09);
+  //  box-sizing: border-box;
+  //  box-shadow: 0px 55.1191px 75.6285px rgba(0, 0, 0, 0.04);
+  //  border-radius: 15px;
+  //}
+  &__animation-container-box-1 {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
   }
+  &__animation-container-box-2 {
+    position: absolute;
+    perspective: 500px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .outer-2 {
+      transform: rotateX(59deg);
+      transform-origin: 50% 85% 40px;
+      background-color: white;
+      width: 350px;
+      height: 262px;
+      border: 1px #000 solid;
+      opacity: 0.5;
+      margin: 0 auto;
+      z-index: 1;
+      border-radius: 10px;
+    }
+  }
+  &__animation-container-box-3 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    perspective: 500px;
+    width: 100%;
+    .outer-3 {
+      transform: rotateX(59deg);
+      transform-origin: 50% 80% 30px;
+      background-color: white;
+      width: 350px;
+      height: 262px;
+      border: 1px #000 solid;
+      margin: 0 auto;
+      z-index: 1;
+      border-radius: 10px;
+    }
+  }
+}
+
+.VideoBar-test {
+  // Родительский блок видео
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  perspective: 500px;
+}
+.presTst {
+  // Само видео
+  width: 450px;
+  height: 262px;
+  outline: none;
+  transform-origin: 50% 50% 28px;
+  transform: rotateX(43deg);
+  border-radius: 15px;
 }

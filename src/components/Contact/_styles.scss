@@ -17,7 +17,7 @@
     font-size: 5.5rem;
     line-height: 98.32px;
 
-    @media only screen and(max-width:1570px) {
+    @media only screen and(max-width:1569px) {
       font-size: 4rem;
       line-height: 68.32px;
     }
@@ -69,6 +69,10 @@
     line-height: 139.9%;
     font-family: "myfont";
     margin-top: 45px;
+
+    @media only screen and(max-width:1569px) {
+      font-size: 20px;
+    }
     @media only screen and(max-width:920px) {
       font-size: 18px;
     }

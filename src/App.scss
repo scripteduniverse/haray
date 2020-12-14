@@ -1,6 +1,11 @@
+@import "src/assets/styles/mixins";
+
 * {
   margin: 0;
   padding: 0;
+  // @include mobile {
+  //   overflow: hidden;
+  // }
 }
 
 @font-face {

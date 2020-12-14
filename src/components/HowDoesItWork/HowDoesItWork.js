@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
+import Slide from "react-reveal/Slide";
 
 import "./_styles.scss";
 
@@ -28,56 +29,60 @@ export default function HowDoesItWork(props) {
 
         <div className="cellphone">
           <div className="cellphone__inner-box2">
-            <div className="HowDoesItWork__inner-container">
-              <div className="cellphone__top-bar">
-                <div className="cellphone__svg-box">
-                  <ReactSVG src={Logo} className="cellphone__svg"></ReactSVG>
-                  <p className="cellphone__number">1,384</p>
+            <Slide top>
+              <div className="HowDoesItWork__inner-container">
+                <div className="cellphone__top-bar">
+                  <div className="cellphone__svg-box">
+                    <ReactSVG src={Logo} className="cellphone__svg"></ReactSVG>
+                    <p className="cellphone__number">1,384</p>
+                  </div>
+                  <p className="cellphone__phrase">Found keywords</p>
+                  <div className="cellphone__test">
+                    <div className="cellphone__chingiz"></div>
+                  </div>
                 </div>
-                <p className="cellphone__phrase">Found keywords</p>
-                <div className="cellphone__test">
-                  <div className="cellphone__chingiz"></div>
-                </div>
-              </div>
-              <div className="cellphone__middle-bar">
-                <div className="cellphone__middle-bar-section">
-                  <img
-                    alt="cirtdan"
-                    W
-                    className="cirtdanLogo"
-                    src={CirtdanLogo}
-                  ></img>
+                <div className="cellphone__middle-bar">
+                  <div className="cellphone__middle-bar-section">
+                    <img
+                      alt="cirtdan"
+                      W
+                      className="cirtdanLogo"
+                      src={CirtdanLogo}
+                    ></img>
 
-                  <div className="cellphone__middle-bar-section-2nd-box">
-                    <p className="cirtdan-phrase">Cirtdan pro</p>
-                    <div className="additional-box">
-                      <img alt="youtube" src={YoutubeLogo}></img>
-                      <p className="youtube-word">Youtube</p>
+                    <div className="cellphone__middle-bar-section-2nd-box">
+                      <p className="cirtdan-phrase">Cirtdan pro</p>
+                      <div className="additional-box">
+                        <img alt="youtube" src={YoutubeLogo}></img>
+                        <p className="youtube-word">Youtube</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="cellphone__left-box">
-                    <div className="cellphone__keyword-number">
-                      <p>37 keywords</p>
-                    </div>
-                    <div className="cellphone__video-length">
-                      <p>12:38</p>
+                    <div className="cellphone__left-box">
+                      <div className="cellphone__keyword-number">
+                        <p>37 keywords</p>
+                      </div>
+                      <div className="cellphone__video-length">
+                        <p>12:38</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="cellphone__video-bar">
-                <div className="cellphone__youtube">
-                  <iframe
-                    className="cellphone__youtube"
-                    src="https://www.youtube.com/embed/E7wJTI-1dvQ"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen
-                    title="video"
-                  />
+
+                <div className="cellphone__video-bar">
+                  {" "}
+                  <div className="cellphone__youtube">
+                    <iframe
+                      className="cellphone__youtube"
+                      src="https://www.youtube.com/embed/E7wJTI-1dvQ"
+                      frameborder="0"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen
+                      title="video"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
+            </Slide>
           </div>
         </div>
       </div>

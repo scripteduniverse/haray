@@ -1,35 +1,71 @@
+@import "src/assets/styles/mixins";
 
-@keyframes pulsar {
-  0% {
-    transform: rotate(0deg);
+// @keyframes pulsar {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   40% {
+//     transform: rotate(360deg);
+//   }
+//   50% {
+//     transform: rotate(720deg);
+//   }
+//   70% {
+//     transform: rotate(1030deg);
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }
+
+// @keyframes pulsar2 {
+//   0% {
+//     transform: rotate(30deg);
+//   }
+//   40% {
+//     transform: rotate(200deg);
+//   }
+
+//   60% {
+//     transform: rotate(700deg);
+//   }
+//   100% {
+//     transform: rotate(30deg);
+//   }
+// }
+.circles-box {
+  position: relative;
+  width: 300px;
+  // background-color: red;
+  height: 800px;
+  top: -50%;
+  right: -20%;
+  @media only screen and(min-width:1569px) {
+    right: -20%;
   }
-  40% {
-    transform: rotate(360deg);
+  @media only screen and(max-width:450px) {
+    right: 0%;
   }
-  50% {
-    transform: rotate(720deg);
-  }
-  70% {
-    transform: rotate(1030deg);
-  }
-  100% {
-    transform: rotate(0deg);
+  @include mobile {
+    width: 100%;
+    position: absolute;
+    // left:200px;
+    // right: 0%;
   }
 }
-
-@keyframes pulsar2 {
-  0% {
-    transform: rotate(30deg);
+.upper-circle {
+  width: 340px;
+  height: 340px;
+  border: 1px #000 solid;
+  position: absolute;
+  border-radius: 50%;
+  right: 1%;
+  // top: 17.5%;
+  @media only screen and (min-width: 2187px) {
+    // right: -15%;
   }
-  40% {
-    transform: rotate(200deg);
-  }
-
-  60% {
-    transform: rotate(700deg);
-  }
-  100% {
-    transform: rotate(30deg);
+  @include mobile {
+    display: none;
   }
 }
 
@@ -39,8 +75,17 @@
   border: 1px #000 solid;
   position: absolute;
   border-radius: 50%;
-  right: 35%;
-  top: 10%;
+  right: 17%;
+  top: 35%;
+  // @media only screen and (min-width:2187px){
+  //   right: -5%;
+  // }
+  @include mobile {
+    width: 519px;
+    height: 519px;
+    top: 50px;
+    // margin-left:100px;
+  }
 }
 
 .x92 {
@@ -71,7 +116,6 @@
   border-radius: 50%;
 }
 
-
 .x93 {
   position: absolute;
   width: 100%;
@@ -98,4 +142,11 @@
   width: 130px;
   height: 130px;
   border-radius: 50%;
+}
+
+.test-div{
+  width:200px;
+  height:200px;
+  background-color: red;
+  margin:0 auto;
 }
